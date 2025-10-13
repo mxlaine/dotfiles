@@ -1,0 +1,74 @@
+/* ================================
+   AYU DARK x HYPRLAND STYLE CONFIG
+   Clean, unrounded, solid borders
+   ================================ */
+
+window {
+    /* Dark, slightly transparent base for blur to show through */
+    background-color: rgba(15, 18, 26, 0.9); /* #0F121A with alpha */
+    
+    /* Solid, flat border — no rounding, no shadow blur */
+    border: 2px solid #E6B450; /* Ayu Yellow */
+    border-radius: 0;
+
+    /* Subtle definition, not glow */
+    box-shadow: 0 0 0 1px #0F121A;
+
+    /* Font setup */
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 14px;
+    color: #B3B1AD; /* Ayu Foreground */
+}
+
+/* Input field styling */
+#input {
+    margin: 6px;
+    padding: 10px 14px;
+    border-radius: 0;
+    border: 1px solid #3A3D4B; /* muted Ayu border tone */
+    background-color: rgba(34, 37, 45, 0.85); /* #22252D */
+    color: #B3B1AD;
+    transition: all 0.2s ease;
+}
+
+#input:focus {
+    background-color: rgba(40, 44, 52, 0.9);
+    border: 1px solid #E6B450;
+    color: #E6B450;
+}
+
+/* Scroll area */
+#scroll {
+    margin-top: 6px;
+}
+
+/* Entry list styling */
+#entry {
+    padding: 10px 14px;
+    margin: 2px 0;
+    border-radius: 0;
+    background-color: transparent;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Selected entry (active) */
+#entry:selected {
+    background-color: #E6B450;
+    color: #0F121A;
+    transform: scale(1.01);
+}
+
+/* Hover (non-selected) */
+#entry:hover:not(:selected) {
+    background-color: rgba(230, 180, 80, 0.15);
+}
+
+/* Text & indicators */
+#text {
+    color: inherit;
+}
+
+#indicator {
+    color: #E6B450;
+}
+
