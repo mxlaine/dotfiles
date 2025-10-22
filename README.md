@@ -12,11 +12,10 @@ Personal configuration files for a Hyprland-based setup.
 
 ## Installation
 
-Clone the repository and link the configs:
+Clone the repository and move to .config (remember to backup current dotfiles)
 
 ```bash
 git clone https://github.com/mxlaine/dotfiles.git
 cd dotfiles
-# Example: link fish config
-ln -s $(pwd)/fish/config.fish ~/.config/fish/config.fish
+mv * ~/.config
 ```
